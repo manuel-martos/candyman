@@ -12,4 +12,4 @@ Let's start!
 
 # Arduino Sketch
 
-You can take a look at the source code of the sketch that will control the RGB Led, placed at [/number3/arduino-rgb-led](/number3/arduino-rgb-led).
+You can take a look at the source code of the sketch that will control the RGB Led, placed at [/number-03/arduino-rgb-led](/number-03/arduino-rgb-led).
