@@ -1,15 +1,14 @@
 {
-  "name": "rgb-led-server",
+  "name": "rgb-led-client",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "client.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node client.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.0",
     "socket.io": "^2.1.1"
   }
 }
