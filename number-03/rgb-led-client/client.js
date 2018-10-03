@@ -1,6 +1,7 @@
+const host = process.env.HOST || 'http://localhost';
 const port = process.env.PORT || 3000;
-const host = `http://localhost:${port}`;
-var socket = require('socket.io-client')(host);
+const url = `${host}:${port}`;
+var socket = require('socket.io-client')(url);
 
 socket.on('connect', function(){
   console.log('connect');
@@ -14,4 +15,4 @@ socket.on('disconnect', function(){
   console.log('disconnect');
 });
 
-console.log(`Client... ${host}`);
+console.log(`Client... ${url}`);
