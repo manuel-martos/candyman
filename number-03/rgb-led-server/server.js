@@ -12,7 +12,7 @@ app.get('/ping', (req, res) => {
 app.get('/led-color', (req, res) => {
   res = res.status(200);
   console.log(`led-color R:${req.query.red} G:${req.query.green} B:${req.query.blue}`);
-  io.emit('led-color', { red: req.query.red, green: req.query.green, blue: req.query.blue });
+  io.emit('led-color', req.query);
   res.send("Ok");
 });
 
