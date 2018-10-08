@@ -11,8 +11,6 @@ serialPort.on('error', function(err) {
   console.log('Error: ', err.message);
 })
 
-// serialPort.on('data', console.log);
-
 socket.on('connect', function(){
   console.log('connect');
 });

@@ -1,0 +1,24 @@
+{
+  "fitbit": {
+    "appUUID": "f268a6c1-8733-425f-a386-016bbc777f0a",
+    "appType": "app",
+    "appDisplayName": "rgb-led-app",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#8bc34a",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "rgb-led-app"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~2.0.0"
+  }
+}

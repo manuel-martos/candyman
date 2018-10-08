@@ -1,0 +1,134 @@
+<svg>
+  <!-- Spinner -->
+  <use id="spinner" href="#spinner" />
+  
+  <svg id="content" display="none">
+    <!-- Background -->
+    <rect x="0" width="116" height="250" fill="#ff0000" />
+    <rect x="116" width="116" height="250" fill="#00ff00" />
+    <rect x="232" width="116" height="250" fill="#0000ff" />
+
+    <!-- Red Color Component -->
+    <use id="red-tumbler-d1" href="#tumblerview" class="red-tumbler-digit-1" pointer-events="visible">
+      <use id="red-tumbler-d1-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="red-tumbler-d1-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="red-tumbler-d1-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="red-tumbler-d1-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="red-tumbler-d1-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="red-tumbler-d1-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="red-tumbler-d1-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="red-tumbler-d1-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="red-tumbler-d1-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="red-tumbler-d1-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="red-tumbler-d1-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="red-tumbler-d1-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="red-tumbler-d1-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="red-tumbler-d1-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="red-tumbler-d1-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="red-tumbler-d1-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+    <use id="red-tumbler-d0" href="#tumblerview" class="red-tumbler-digit-0">
+      <use id="red-tumbler-d0-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="red-tumbler-d0-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="red-tumbler-d0-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="red-tumbler-d0-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="red-tumbler-d0-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="red-tumbler-d0-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="red-tumbler-d0-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="red-tumbler-d0-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="red-tumbler-d0-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="red-tumbler-d0-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="red-tumbler-d0-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="red-tumbler-d0-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="red-tumbler-d0-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="red-tumbler-d0-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="red-tumbler-d0-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="red-tumbler-d0-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+
+    <!-- Green Color Component -->
+    <use id="green-tumbler-d1" href="#tumblerview" class="green-tumbler-digit-1">
+      <use id="green-tumbler-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="green-tumbler-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="green-tumbler-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="green-tumbler-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="green-tumbler-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="green-tumbler-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="green-tumbler-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="green-tumbler-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="green-tumbler-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="green-tumbler-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="green-tumbler-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="green-tumbler-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="green-tumbler-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="green-tumbler-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="green-tumbler-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="green-tumbler-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+    <use id="green-tumbler-d0" href="#tumblerview" class="green-tumbler-digit-0">
+      <use id="green-tumbler-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="green-tumbler-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="green-tumbler-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="green-tumbler-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="green-tumbler-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="green-tumbler-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="green-tumbler-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="green-tumbler-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="green-tumbler-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="green-tumbler-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="green-tumbler-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="green-tumbler-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="green-tumbler-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="green-tumbler-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="green-tumbler-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="green-tumbler-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+
+    <!-- Blue Color Component -->
+    <use id="blue-tumbler-d1" href="#tumblerview" class="blue-tumbler-digit-1">
+      <use id="blue-tumbler-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="blue-tumbler-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="blue-tumbler-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="blue-tumbler-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="blue-tumbler-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="blue-tumbler-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="blue-tumbler-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="blue-tumbler-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="blue-tumbler-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="blue-tumbler-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="blue-tumbler-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="blue-tumbler-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="blue-tumbler-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="blue-tumbler-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="blue-tumbler-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="blue-tumbler-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+    <use id="blue-tumbler-d0" href="#tumblerview" class="blue-tumbler-digit-0">
+      <use id="blue-tumbler-0" href="#tumbler-item" class="item"> <text id="content">0</text> </use>
+      <use id="blue-tumbler-1" href="#tumbler-item" class="item"> <text id="content">1</text> </use>
+      <use id="blue-tumbler-2" href="#tumbler-item" class="item"> <text id="content">2</text> </use>
+      <use id="blue-tumbler-3" href="#tumbler-item" class="item"> <text id="content">3</text> </use>
+      <use id="blue-tumbler-4" href="#tumbler-item" class="item"> <text id="content">4</text> </use>
+      <use id="blue-tumbler-5" href="#tumbler-item" class="item"> <text id="content">5</text> </use>
+      <use id="blue-tumbler-6" href="#tumbler-item" class="item"> <text id="content">6</text> </use>
+      <use id="blue-tumbler-7" href="#tumbler-item" class="item"> <text id="content">7</text> </use>
+      <use id="blue-tumbler-8" href="#tumbler-item" class="item"> <text id="content">8</text> </use>
+      <use id="blue-tumbler-9" href="#tumbler-item" class="item"> <text id="content">9</text> </use>
+      <use id="blue-tumbler-a" href="#tumbler-item" class="item"> <text id="content">A</text> </use>
+      <use id="blue-tumbler-b" href="#tumbler-item" class="item"> <text id="content">B</text> </use>
+      <use id="blue-tumbler-c" href="#tumbler-item" class="item"> <text id="content">C</text> </use>
+      <use id="blue-tumbler-d" href="#tumbler-item" class="item"> <text id="content">D</text> </use>
+      <use id="blue-tumbler-e" href="#tumbler-item" class="item"> <text id="content">E</text> </use>
+      <use id="blue-tumbler-f" href="#tumbler-item" class="item"> <text id="content">F</text> </use>
+    </use>
+  </svg>
+  
+  <svg id="error" display="none">
+    <use href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+      <set href="#header/text" attributeName="text-buffer" to="ERROR"/>
+      <set href="#copy/text" attributeName="text-buffer"
+         to="Cannot comunicate with companion app. Please, check if Bluetooth is active on your mobile phone."/>
+    </use>
+  </svg>
+  
+</svg>
