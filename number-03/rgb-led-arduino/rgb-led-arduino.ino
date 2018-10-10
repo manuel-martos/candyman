@@ -2,57 +2,59 @@
 #define GREEN_PIN 10
 #define BLUE_PIN 11
 
-uint8_t colorPacket[17] = { 0x024, 0x041, 0, 0, 0, 0x00a, 0x00d };
+#define START_TAG_BYTE1 0x024
+#define START_TAG_BYTE2 0x041
+#define END_TAG_BYTE1 0x00a
+#define END_TAG_BYTE2 0x00d
+
+#define START_TAG_POS 1
+#define RED_COMPONENT_POS 2
+#define GREEN_COMPONENT_POS 3
+#define BLUE_COMPONENT_POS 4
+#define END_TAG_POS1 5
+#define END_TAG_POS2 6
+
+#define COLOR_PACKET_SIZE 7
+
+#define SERIAL_SPEED 57600
+
+int serialCount = 0;
+boolean synced = false;
+uint8_t colorPacket[COLOR_PACKET_SIZE] = {
+  START_TAG_BYTE1, START_TAG_BYTE2, 0, 0, 0, END_TAG_BYTE1, END_TAG_BYTE2
+};
 
 void setup() {
-  Serial.begin(57600);
+  Serial.begin(SERIAL_SPEED);
   while (!Serial); // wait for Leonardo enumeration, others continue immediately
 
-  Serial.println("rgb-led-arduino ready...");
-  
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BLUE_PIN, OUTPUT);
 }
 
-int serialCount = 0;
-int synced = 0;
-
 void loop() {
   if (Serial.available() > 0) {
     char ch = Serial.read();
-    Serial.print("ch -> ");
-    Serial.println(ch);
-    if (synced == 0 && ch != 0x024) {
+    if (!synced && ch != START_TAG_BYTE1) {
       return;
     }
-    synced = 1;
-    if ((serialCount == 1 && ch != 0x041)
-        || (serialCount == 5 && ch != 0x00a)
-        || (serialCount == 6 && ch != 0x00d)) {
+    synced = true;
+    if ((serialCount == START_TAG_POS && ch != START_TAG_BYTE2)
+        || (serialCount == END_TAG_POS1 && ch != END_TAG_BYTE1)
+        || (serialCount == END_TAG_POS2 && ch != END_TAG_BYTE2)) {
       serialCount = 0;
-      synced = 0;
+      synced = false;
       return;
     }
 
-    if (serialCount > 0 || ch == 0x024) {
+    if (serialCount > 0 || ch == START_TAG_BYTE1) {
       colorPacket[serialCount++] = ch;
-      if (serialCount == 7) {
-        uint8_t red = colorPacket[2];
-        uint8_t green = colorPacket[3];
-        uint8_t blue = colorPacket[4];
-        
-        Serial.println("Sending color to led...");
-        Serial.print("RED: ");
-        Serial.println(red);
-        Serial.print("GREEN: ");
-        Serial.println(green);
-        Serial.print("BLUE: ");
-        Serial.println(blue);
+      if (serialCount == COLOR_PACKET_SIZE) {
+        analogWrite(RED_PIN, colorPacket[RED_COMPONENT_POS]);
+        analogWrite(GREEN_PIN, colorPacket[GREEN_COMPONENT_POS]);
+        analogWrite(BLUE_PIN, colorPacket[BLUE_COMPONENT_POS]);
         serialCount = 0;
-        analogWrite(RED_PIN, red);
-        analogWrite(GREEN_PIN, green);
-        analogWrite(BLUE_PIN, blue);
       }
     }
   }

@@ -1,10 +1,9 @@
 const host = process.env.HOST || 'http://localhost';
 const port = process.env.PORT || 3000;
+const serial = process.env.SERIAL || '/dev/ttyACM0';
 const url = `${host}:${port}`;
 const socket = require('socket.io-client')(url);
-const SerialPort = require('serialport');
-
-const serialPort = new SerialPort('/dev/ttyACM0', { baudRate: 57600 });
+const serialPort = new require('serialport')(serial, { baudRate: 57600 });
 
 // Open errors will be emitted as an error event
 serialPort.on('error', function(err) {
